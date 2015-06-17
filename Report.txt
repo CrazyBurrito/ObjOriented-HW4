@@ -1,0 +1,15 @@
+Part 1:
+1.I identified the hard-coded numbers that needed to be replaced with symbolic constants.
+2. I made global variables initialHunger, initialSize, starvingLevel, smallSize, hungryLevel, and bigSize.
+3. Removed hard-coded numbers 0.9 (ln36), 1.0 (ln37), 0.2 (ln83), 7.0 (ln85), 0.7 (ln101), 5.0 (ln104) and replaced with the appropriate constants.
+
+Part 2:
+1. I created avstract class FishStrategy.
+2. I moved the conditional logic in the move() method to the strategy.
+3. In Fish() I created a field for the strategy.
+4. I updated the move() method to delegate to the strategy.
+5. I created subcalsses of the strategy for each condition the fish could have and put each action in the respective subclass.
+6. I created an updateMoveStrategy() method to Fish() that sets the value of the strategy needed.
+7. I added a call to updateMoveStrategy in both the constructor and age() methods.
+
+Part 3:
